@@ -182,6 +182,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📱 Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <img src="screenshots/splash.png" width="30%" alt="Splash Screen">
+    <img src="screenshots/signin.png" width="30%" alt="Sign In">
+    <img src="screenshots/signup.png" width="30%" alt="Sign Up">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
     <img src="screenshots/dashboard.png" width="30%" alt="Dashboard">
     <img src="screenshots/favorite_station.png" width="30%" alt="Favorite Stations">
     <img src="screenshots/favorite_details.png" width="30%" alt="Station Details">
