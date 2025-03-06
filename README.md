@@ -178,3 +178,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Flutter Team](https://flutter.dev/team)
 - [Firebase](https://firebase.google.com)
 - All our amazing contributors!
+
+## 📱 Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <img src="screenshots/dashboard.png" width="30%" alt="Dashboard">
+    <img src="screenshots/favorite_station.png" width="30%" alt="Favorite Stations">
+    <img src="screenshots/favorite_details.png" width="30%" alt="Station Details">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
+    <img src="screenshots/profile_1.png" width="30%" alt="User Profile">
+    <img src="screenshots/notifications.png" width="30%" alt="Notifications">
+    <img src="screenshots/station in google maps.png" width="30%" alt="Station on Map">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
+    <img src="screenshots/profile_2.png" width="30%" alt="Profile Settings">
+    <img src="screenshots/favorite_empty.png" width="30%" alt="Empty Favorites">
+</div>
