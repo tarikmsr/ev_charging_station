@@ -1,0 +1,43 @@
+class User {
+  final String? userId;
+  final String? firstName;
+  final String? lastName;
+  final String? email;
+  final String? brand;
+  final String? model;
+  final DateTime? createdAt;
+
+
+
+  User({
+    this.userId,
+    this.firstName,
+    this.lastName,
+    this.email,
+    this.brand,
+    this.model,
+    this.createdAt,
+  });
+
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+      userId: json['userId'],
+      firstName: json['firstName'],
+      lastName: json['lastName'],
+      email: json['email'],
+      brand: json['brand'],
+      model: json['model'],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'userId': userId,
+      'firstName': firstName,
+      'lastName': lastName,
+      'email': email,
+      'brand': brand,
+      'model': model,
+    };
+  }
+}
