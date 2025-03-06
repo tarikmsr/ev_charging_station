@@ -42,16 +42,13 @@ A modern, user-friendly mobile application that helps electric vehicle owners fi
 ##  Getting Started
 
 ### For Users
-1. Download the app from:
-   - [Google Play Store](link-to-play-store)
-   - [Apple App Store](link-to-app-store)
 
-2. Create an account using:
+1. Create an account using:
    - Email and password
    - Google account
    - Apple ID (iOS only)
 
-3. Allow location permissions for the best experience
+2. Allow location permissions for the best experience
 
 ### For Developers
 
@@ -65,7 +62,7 @@ A modern, user-friendly mobile application that helps electric vehicle owners fi
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/tarikmsr/ev_charging_app.git
+   git clone https://github.com/tarikmsr/ev_charging_station.git
    cd ev_charging_app
    ```
 
@@ -94,11 +91,14 @@ A modern, user-friendly mobile application that helps electric vehicle owners fi
 ##  Project Structure
 ```
 lib/
-├── core/                   # Core functionality
+├── core/                  # Core functionality
+│   ├── app_assets/        # Images and icons
+│   ├── config/            # firebase config
 │   ├── models/            # Data models
 │   ├── services/          # Service classes
 │   ├── routes/            # App routes
-│   └── widgets/           # Shared widgets
+│   └── services/          # Shared services
+│   └── utils/             # Shared tools
 ├── features/              # Feature modules
 │   ├── authentication/    # Auth feature
 │   ├── charging_stations/ # Stations feature
@@ -173,13 +173,8 @@ lib/
 ##  License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-##  Support
-- Email: support@evchargingapp.com
-- Website: www.evchargingapp.com
-- Twitter: [@evchargingapp](https://twitter.com/evchargingapp)
 
 ##  Acknowledgments
 - [Flutter Team](https://flutter.dev/team)
 - [Firebase](https://firebase.google.com)
-- [OpenStreetMap Contributors](https://www.openstreetmap.org/about)
 - All our amazing contributors!
