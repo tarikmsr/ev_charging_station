@@ -13,6 +13,35 @@ A modern, user-friendly mobile application that helps electric vehicle owners fi
 
 See the [Screenshots](#-screenshots) section below for a visual tour of the app's features.
 
+## 📱 Screenshots
+
+### Authentication
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <img src="screenshots/splash.png" width="30%" alt="Welcome Screen">
+    <img src="screenshots/signin.png" width="30%" alt="Sign In Screen">
+    <img src="screenshots/signup.png" width="30%" alt="Sign Up Screen">
+</div>
+
+### Location & Stations
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
+    <img src="screenshots/nearby_stations.png" width="30%" alt="Find Nearby Charging Stations">
+    <img src="screenshots/car_position_map.png" width="30%" alt="Your Current Location">
+    <img src="screenshots/marker_station.png" width="30%" alt="Station Information Marker">
+</div>
+
+### Station Management
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
+    <img src="screenshots/favorite_station.png" width="30%" alt="Your Favorite Stations">
+    <img src="screenshots/favorite_details.png" width="30%" alt="Detailed Station Information">
+    <img src="screenshots/station in google maps.png" width="30%" alt="Navigation to Station">
+</div>
+
+### User Experience
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
+    <img src="screenshots/profile_1.png" width="30%" alt="User Profile & Settings">
+    <img src="screenshots/notifications.png" width="30%" alt="Push Notifications">
+</div>
+
 ##  Key Features
 
 ### For Users
@@ -217,32 +246,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Flutter Team](https://flutter.dev/team)
 - [Firebase](https://firebase.google.com)
 - All our amazing contributors!
-
-## 📱 Screenshots
-
-### Authentication
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
-    <img src="screenshots/splash.png" width="30%" alt="Welcome Screen">
-    <img src="screenshots/signin.png" width="30%" alt="Sign In Screen">
-    <img src="screenshots/signup.png" width="30%" alt="Sign Up Screen">
-</div>
-
-### Location & Stations
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
-    <img src="screenshots/nearby_stations.png" width="30%" alt="Find Nearby Charging Stations">
-    <img src="screenshots/car_position_map.png" width="30%" alt="Your Current Location">
-    <img src="screenshots/marker_station.png" width="30%" alt="Station Information Marker">
-</div>
-
-### Station Management
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
-    <img src="screenshots/favorite_station.png" width="30%" alt="Your Favorite Stations">
-    <img src="screenshots/favorite_details.png" width="30%" alt="Detailed Station Information">
-    <img src="screenshots/station in google maps.png" width="30%" alt="Navigation to Station">
-</div>
-
-### User Experience
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 10px;">
-    <img src="screenshots/profile_1.png" width="30%" alt="User Profile & Settings">
-    <img src="screenshots/notifications.png" width="30%" alt="Push Notifications">
-</div>
