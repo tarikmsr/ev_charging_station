@@ -68,6 +68,7 @@ class _FavoriteStationsPageState extends State<FavoriteStationsPage> {
         });
       }
     } catch (e) {
+      print('Error loading favorite stations: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

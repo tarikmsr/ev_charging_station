@@ -176,10 +176,30 @@ class _StationDetailsPageState extends State<StationDetailsPage> {
                   color: widget.station.available ? Colors.green : Colors.red,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Text(
-                  widget.station.available ? 'AVAILABLE' : 'UNAVAILABLE',
-                  style: const TextStyle(color: Colors.white),
-                ),
+                child:
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        widget.station.available ? 'Available' : 'Unavailable',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        widget.station.availableStatus ?? '',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+
+
+
+                    ],
+                  )
               ),
             ),
             const SizedBox(height: 16),

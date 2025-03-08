@@ -47,8 +47,15 @@ class _FavoriteStationsPageState extends State<FavoriteStationsPage> {
       final userFavoriteIds = await _stationService.getFavoriteStationIds();
       print('userFavoriteIds: $userFavoriteIds');
 
-      final stations = await Future.wait(
-        userFavoriteIds.map((id) => _stationService.getStationDetails(id)),
+
+      final List<Map<String, dynamic>?> stations = await Future.wait(
+        userFavoriteIds.map((id) async {
+          Map<String, dynamic>? data = await _stationService.getStationDetails(id);
+          if (data != null) {
+            data['id'] = id; // Ensure the ID is set correctly
+          }
+          return data; // Return the single map, not a list
+        }),
       );
 
       print('stations: $stations');

@@ -156,30 +156,306 @@ class FirestoreService {
       final stationsRef = _firestore.collection('stations');
 
       // Demo station data
-      final demoStations = [
+      final demoStations =
+
+      [
         {
-          'name': 'UIR Charging Station',
-          'address': 'Université Internationale de Rabat',
-          'latitude': 33.981535,
-          'longitude': -6.716713,
-          'available': true,
-          'power': 50,
-          'pricePerKwh': 2.5,
-          'connectorTypes': ['Type 2', 'CCS'],
-          'isDemoStation': true,
+          "name": "Marjane IRESEN (Hay Riad)",
+          "address": "Rocade de Rabat (Marjane Hay Riad), Rabat, Morocco",
+          "latitude": 33.955,
+          "longitude": -6.853,
+          "available": true,
+          "available_status": "Operational (Public)",
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
         },
         {
-          'name': 'Hay Riad Station',
-          'address': 'Hay Riad, Rabat',
-          'latitude': 33.969774,
-          'longitude': -6.728664,
-          'available': true,
-          'power': 150,
-          'pricePerKwh': 3.0,
-          'connectorTypes': ['Type 2', 'CHAdeMO', 'CCS'],
-          'isDemoStation': true,
+          "name": "IRESEN Headquarters",
+          "address": "22 Avenue S.A.R. Sidi Mohamed, Rabat, Morocco",
+          "latitude": 33.971,
+          "longitude": -6.849,
+          "available": true,
+          "available_status": "Operational (Public, daytime access)",
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
         },
-        // Add more demo stations as needed
+        {
+          "name": "Sofitel Rabat Jardin Des Roses",
+          "address": "Bp 450 Quartier Aviation, Rabat, Morocco",
+          "latitude": 34.020882,
+          "longitude": -6.84165,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "FastVolt Afriquia Rabat Al Melia",
+          "address": "X49P+H8H, Avenue Al Melia, Rabat, Morocco",
+          "latitude": 34.020,
+          "longitude": -6.841,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "Hotel El Minzah",
+          "address": "11 Rue Lokous, Tangier, Morocco",
+          "latitude": 35.774,
+          "longitude": -5.802,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Supercharger Tangier",
+          "address": "Route sans nom, Tangier, Morocco",
+          "latitude": 35.7595,
+          "longitude": -5.833,
+          "available": true,
+          "available_status": "Operational (Public - Tesla only)",
+          "power": 120,
+          "pricePerKwh": 0.25,
+          "connectorTypes": ["Tesla Supercharger"]
+        },
+        {
+          "name": "Station Afriquia A5",
+          "address": "Tangier, Morocco",
+          "latitude": 35.7595,
+          "longitude": -5.833,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "Mövenpick Hotel and Casino",
+          "address": "Avenue Mohamed VI, Tangier, Morocco",
+          "latitude": 35.7595,
+          "longitude": -5.833,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Tesla Supercharger - Casablanca",
+          "address": "Parking Onomo Hotel, Boulevard Al Massira Al Khadra, Casablanca 20250, Morocco",
+          "latitude": 33.5731,
+          "longitude": -7.5898,
+          "available": true,
+          "available_status": "Operational (Public - Tesla only)",
+          "power": 120,
+          "pricePerKwh": 0.25,
+          "connectorTypes": ["Tesla Supercharger"]
+        },
+        {
+          "name": "Porsche Destination Charging - Corniche By Palmeraie",
+          "address": "90 Boulevard de la Corniche, Casablanca 20000, Morocco",
+          "latitude": 33.6083,
+          "longitude": -7.6349,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "FastVolt Afriquia Tafraouti",
+          "address": "Avenue des FAR, Casablanca 20000, Morocco",
+          "latitude": 33.5731,
+          "longitude": -7.5898,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "FastVolt Marjane Californie",
+          "address": "Boulevard Panoramique, Casablanca 20150, Morocco",
+          "latitude": 33.5731,
+          "longitude": -7.5898,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "Centre Porsche - Casablanca",
+          "address": "Route de Nouaceur, Casablanca 20250, Morocco",
+          "latitude": 33.5731,
+          "longitude": -7.5898,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 0,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "FastVolt Parking Marina Shopping",
+          "address": "Boulevard de la Corniche, Casablanca 20000, Morocco",
+          "latitude": 33.6083,
+          "longitude": -7.6349,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "FastVolt - Afriquia El Jadida Centre Ville",
+          "address": "El Jadida, Morocco",
+          "latitude": 33.251,
+          "longitude": -8.507,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "TotalEnergies Relais Mazagan",
+          "address": "Autoroute El Jadida Safi, Pk 25, El Jadida, Morocco",
+          "latitude": 33.234,
+          "longitude": -8.507,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Royal El Jadida Golf",
+          "address": "7H5G+PH6, 24000, El Jadida, Morocco",
+          "latitude": 33.252,
+          "longitude": -8.507,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Tesla Supercharger - Agadir",
+          "address": "Baie des Palmiers - Cité Founty P5, Agadir 80010, Morocco",
+          "latitude": 30.427,
+          "longitude": -9.598,
+          "available": true,
+          "available_status": "Operational (Public - Tesla only)",
+          "power": 120,
+          "pricePerKwh": 0.25,
+          "connectorTypes": ["Tesla Supercharger"]
+        },
+        {
+          "name": "FastVolt - Afriquia Agadir Centre Ville",
+          "address": "CF48+H75, Agadir 80000, Morocco",
+          "latitude": 30.427,
+          "longitude": -9.598,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "Parking Mairie Agadir - Kilowatt.ma",
+          "address": "CC92+QMX, Agadir 80000, Morocco",
+          "latitude": 30.427,
+          "longitude": -9.598,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Station-service Total Relais Agadir",
+          "address": "Avenue El Moune, Agadir 80000, Morocco",
+          "latitude": 30.427,
+          "longitude": -9.598,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "FastVolt Afriquia Tétouan Park",
+          "address": "Tétouan, Morocco",
+          "latitude": 35.564015,
+          "longitude": -5.486566,
+          "available": true,
+          "available_status": null,
+          "power": 50,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2", "CCS"]
+        },
+        {
+          "name": "IKEA Cabo Negro",
+          "address": "90070 Cabo Negro, Morocco",
+          "latitude": 35.5600,
+          "longitude": -5.3000,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Shell Meloussa",
+          "address": "A4 94053 Meloussa, Morocco",
+          "latitude": 35.6000,
+          "longitude": -5.2500,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Station Service Total Tanger MED",
+          "address": "A4 Autoroute 90000 Ghedir, Morocco",
+          "latitude": 35.7000,
+          "longitude": -5.9167,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "Carrefour Salé EV Charging Station",
+          "address": "Carrefour Market, Avenue Mohammed V, Salé, Morocco",
+          "latitude": 34.0506,
+          "longitude": -6.7823,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        },
+        {
+          "name": "TotalEnergies Tamesna Charging Station",
+          "address": "Route de Tamesna, Salé, Morocco",
+          "latitude": 34.0500,
+          "longitude": -6.8000,
+          "available": true,
+          "available_status": null,
+          "power": 22,
+          "pricePerKwh": 2.5,
+          "connectorTypes": ["Type 2"]
+        }
       ];
 
       // Add each demo station to the batch

@@ -59,8 +59,7 @@ class AuthService {
         );
 
         print('User data initialized, creating demo stations...');
-        // Initialize demo stations
-        // await _firestoreService.initializeDemoStations();
+
       }
 
       // Save auth data locally
@@ -107,6 +106,8 @@ class AuthService {
         email: userCredential.user?.email,
       );
 
+      // Initialize demo stations
+      await _firestoreService.initializeDemoStations();
       return userCredential;
     } catch (e) {
       print('SignIn Error: $e');
@@ -167,10 +168,6 @@ class AuthService {
           firstName: firstName,
           lastName: lastName,
         );
-
-        // print('User data initialized, creating demo stations...');
-        // Initialize demo stations
-        // await _firestoreService.initializeDemoStations();
       }
 
       // Save auth data locally

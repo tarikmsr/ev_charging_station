@@ -3,7 +3,7 @@ class AppAssets {
   static const String logo = 'assets/images/logo.png';
   static const String profile = 'assets/images/profile.png';
   static const String evCharging = 'assets/images/ev_charging.png';
-  static const String evChargerAvailable = 'assets/images/ev_charger_av.png';
+  static const String evChargerAv = 'assets/images/ev_charger_av.png';
   static const String google = 'assets/images/google.png';
   static const String car = 'assets/images/car.png';
 

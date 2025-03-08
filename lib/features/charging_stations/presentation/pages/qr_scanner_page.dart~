@@ -65,7 +65,6 @@ class _QRScannerPageState extends State<QRScannerPage> {
 
         // Navigate to station details
         final station = Station.fromJson(stationId, stationData);
-
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(

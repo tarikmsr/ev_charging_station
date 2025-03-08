@@ -5,6 +5,7 @@ class Station {
   final double latitude;
   final double longitude;
   final bool available;
+  final String? availableStatus;
   final double power;
   final double pricePerKwh;
   final List<String> connectorTypes;
@@ -17,6 +18,7 @@ class Station {
     required this.latitude,
     required this.longitude,
     required this.available,
+    required this.availableStatus,
     required this.power,
     required this.pricePerKwh,
     required this.connectorTypes,
@@ -31,6 +33,7 @@ class Station {
       latitude: json['latitude'] as double,
       longitude: json['longitude'] as double,
       available: json['available'] as bool,
+      availableStatus: json['available_status'] as String?,
       power: (json['power'] as num).toDouble(),
       pricePerKwh: (json['pricePerKwh'] as num).toDouble(),
       connectorTypes: List<String>.from(json['connectorTypes'] as List),
@@ -45,6 +48,7 @@ class Station {
       'latitude': latitude,
       'longitude': longitude,
       'available': available,
+      'available_status': available,
       'power': power,
       'pricePerKwh': pricePerKwh,
       'connectorTypes': connectorTypes,

@@ -30,7 +30,8 @@ class MyApp extends StatelessWidget {
         Provider<FirestoreService>(create: (_) => FirestoreService()),
         Provider<StationService>(
           create: (context) => StationService(
-            firestoreService: Provider.of<FirestoreService>(context, listen: false),
+            firestoreService:
+                Provider.of<FirestoreService>(context, listen: false),
           ),
         ),
       ],
